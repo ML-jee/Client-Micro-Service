@@ -24,6 +24,7 @@ import java.util.Optional;
 
 @RequiredArgsConstructor
 @RestController
+@RequestMapping("/client")
 public class ClientController {
     private final UserService userService;
     private final UserAuthenticationProvider userAuthenticationProvider;
