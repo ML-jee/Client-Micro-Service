@@ -11,6 +11,6 @@ public interface UserMapper {
 
     UserDto toClientDto(User user);
 
-    @Mapping(target = "password", ignore = true)
+    @Mapping(source = "genre", target = "genre")
     User signUpToClient(SignUpDto sIgnUpDto);
 }

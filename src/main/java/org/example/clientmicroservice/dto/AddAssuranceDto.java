@@ -10,8 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class AddAssuranceDto {
-    private int idAssurance;
-    private String typeAssurance;
+    private String idAssurance;
     private String nom;
     private String description;
     private float prix;

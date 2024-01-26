@@ -73,7 +73,7 @@ public class ClientController {
     @PostMapping("/chooseInsurance/{idAssurance}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<String> chooseInsurance(
-            @PathVariable int idAssurance,
+            @PathVariable String idAssurance,
             @RequestBody AddAssuranceDto addAssuranceDto,
             Authentication authentication) {
 
@@ -81,7 +81,7 @@ public class ClientController {
         if (authentication != null && authentication.isAuthenticated()) {
 
             // Simulate storing the selected insurance
-            availableInsurances.add(new AddAssuranceDto(idAssurance, "", addAssuranceDto.getNom(),
+            availableInsurances.add(new AddAssuranceDto(idAssurance, addAssuranceDto.getNom(),
                     addAssuranceDto.getDescription(), addAssuranceDto.getPrix()));
 
             // Perform additional processing or validation on the selected insurance and idAssurance

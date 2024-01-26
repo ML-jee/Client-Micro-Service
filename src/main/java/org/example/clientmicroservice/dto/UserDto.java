@@ -22,10 +22,11 @@ public class UserDto {
     private String statutMarital;
     private float revenue;
     private String email;
-    private String role="ROLE_CLIENT";
+    private String role="CLIENT";
     private String typeAssurance;
     private String adresseWallet;
     private String token;
+    private String genre;
 
     private AddAssuranceDto assurance;
 

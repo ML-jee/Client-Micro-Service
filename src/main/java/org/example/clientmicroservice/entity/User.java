@@ -29,7 +29,7 @@ public class User {
     private String role="CLIENT";
     private String typeAssurance;
     private String adresseWallet;
-    private String password;
+    private String genre;
 
 
 
